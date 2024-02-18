@@ -1,0 +1,48 @@
+{{!< default}}
+
+{{#post}}
+
+<article class="{{post_class}}">
+
+    <header>
+			<time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+			<h1>{{title}}</h1>
+
+			{{#if custom_excerpt}}
+				<p>{{custom_excerpt}}</p>
+			{{/if}}
+
+			{{#if feature_image}}
+				<figure>
+					{{> "feature-image"}}
+					{{#if feature_image_caption}}
+						<figcaption>{{feature_image_caption}}</figcaption>
+					{{/if}}
+				</figure>
+			{{/if}}
+    </header>
+
+    <div>
+			{{content}}
+    </div>
+
+    <footer>
+			<div>
+				Written by {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
+			</div>
+
+			{{#if comments}}
+				<section>
+					{{comments}}
+				</section>
+			{{/if}}
+    </footer>
+
+</article>
+
+<aside>
+	{{#next_post}}<a href="{{url}}">{{> "icons/arrow-left"}} <h4>{{title}}</h4></a>{{/next_post}}
+	{{#prev_post}}<a href="{{url}}"><h4>{{title}}</h4> {{> "icons/arrow-right"}}</a>{{/prev_post}}
+</aside>
+
+{{/post}}

@@ -1,0 +1,13 @@
+/*
+This is a development CSS file that is compiled to a minified
+production stylesheet in assets/index.css using: npm run dev
+*/
+
+/* Base components */
+@import "base/normalize.css";
+@import "base/variables.css";
+@import "base/defaults.css";
+@import "base/grid.css";
+
+/* Common components */
+@import "common/navigation.css";
