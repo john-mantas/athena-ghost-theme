@@ -9,5 +9,10 @@ production stylesheet in assets/index.css using: npm run dev
 @import "base/defaults.css";
 @import "base/grid.css";
 
+/* Elements */
+@import "elements/buttons.css";
+
 /* Common components */
+@import "common/helpers.css";
+@import "common/header.css";
 @import "common/navigation.css";

@@ -1,12 +1,17 @@
 .nav {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.nav a {
+.nav__item {
 	display: block;
 	padding: 6px;
+}
+
+.nav__item + .nav__item {
+	margin-inline-start: 10px;
 }

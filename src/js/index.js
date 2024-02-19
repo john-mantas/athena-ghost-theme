@@ -5,3 +5,12 @@
 import "../css/index.css";
 
 console.log("Athena Ghost theme");
+
+(function () {
+	const toggle = document.getElementById("menu_toggle");
+	const header = toggle.closest(".header");
+
+	toggle.addEventListener("click", function () {
+		header.classList.toggle("is-open");
+	})
+})();

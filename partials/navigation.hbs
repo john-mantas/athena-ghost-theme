@@ -12,7 +12,7 @@
 	<ul class="nav" role="menu">
 		{{#foreach navigation}}
 			<li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem">
-				<a href="{{url absolute="true"}}"{{#if current}} aria-current="true"{{/if}}>
+				<a href="{{url absolute="true"}}"{{#if current}} aria-current="true"{{/if}} class="nav__item">
 					{{label}}
 				</a>
 			</li>

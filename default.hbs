@@ -13,18 +13,7 @@
 	</head>
 
 	<body class="{{body_class}}">
-		<header>
-				<nav>
-					<a href="{{@site.url}}">
-						{{#if @site.logo}}
-							<img src="{{@site.logo}}" alt="{{@site.title}}" />
-						{{else}}
-							{{@site.title}}
-						{{/if}}
-					</a>
-					{{navigation}}
-				</nav>
-		</header>
+		{{> "header" }}
 
 		<main>
 			{{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
