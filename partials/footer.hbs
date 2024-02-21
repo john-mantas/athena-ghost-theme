@@ -1,0 +1,40 @@
+<footer class="site__footer">
+	<div class="site-footer__main">
+		<div class="container">
+			<a href="{{@site.url}}" class="site-footer__logo">
+				{{#if @site.logo}}
+					<img src="{{@site.logo}}" alt="{{@site.title}}" />
+				{{else}}
+					{{@site.title}}
+				{{/if}}
+			</a>
+			{{#if @site.secondary_navigation}}
+				<nav>{{navigation type="secondary"}}</nav>
+			{{/if}}
+		</div>
+	</div>
+
+	<small class="site-footer__copy">
+		<div>
+			<a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}
+			&bull; Published with <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a> and Athena
+		</div>
+		<nav class="nav">
+			{{#if @site.facebook}}
+				<a href="{{facebook_url}}" target="_blank" rel="noopener noreferrer" class="nav__item" title="Facebook">
+					{{> icons/socials/facebook}}
+				</a>
+			{{/if}}
+			{{#if @site.twitter}}
+				<a href="{{twitter_url}}" target="_blank" rel="noopener noreferrer" class="nav__item" title="X/Twitter">
+					{{> icons/socials/twitter}}
+				</a>
+			{{/if}}
+			{{!-- <a href="#" target="_blank" rel="noopener noreferrer" class="nav__item" title="Instagram">{{> icons/socials/instagram}}</a> --}}
+			{{!-- <a href="#" target="_blank" rel="noopener noreferrer" class="nav__item" title="Pinterest">{{> icons/socials/pinterest}}</a> --}}
+			{{!-- <a href="#" target="_blank" rel="noopener noreferrer" class="nav__item" title="TikTok">{{> icons/socials/tiktok}}</a> --}}
+			{{!-- <a href="#" target="_blank" rel="noopener noreferrer" class="nav__item" title="Youtube">{{> icons/socials/youtube}}</a> --}}
+			{{!-- <a href="#" target="_blank" rel="noopener noreferrer" class="nav__item" title="LinkedIn">{{> icons/socials/linkedin}}</a> --}}
+		</nav>
+	</small>
+</footer>

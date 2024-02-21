@@ -8,7 +8,7 @@
 }
 
 .nav__item {
-	display: block;
+	display: flex;
 	padding: 6px;
 }
 

@@ -1,0 +1,27 @@
+.site-footer__main {
+	display: grid;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.site-footer__logo {
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 20px;
+}
+
+.site-footer__copy {
+	border-top: 1px solid var(--color-border);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 10px var(--space-gutter);
+}
+
+@media screen and (max-width: 768px) {
+	.site-footer__copy {
+		flex-direction: column;
+	}
+}
