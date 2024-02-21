@@ -14,5 +14,6 @@ production stylesheet in assets/index.css using: npm run dev
 
 /* Common components */
 @import "common/helpers.css";
+@import "common/global.css";
 @import "common/header.css";
 @import "common/navigation.css";
