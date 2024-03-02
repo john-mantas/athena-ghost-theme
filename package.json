@@ -1,92 +1,110 @@
 {
-    "name": "athena",
-    "description": "Help center theme for Ghost",
-    "demo": "https://starter.ghost.io",
-    "version": "1.0.0",
-    "engines": {
-        "ghost": ">=5.0.0"
-    },
-    "license": "MIT",
-    "screenshots": {
-        "desktop": "assets/screenshot-desktop.jpg"
-    },
-    "scripts": {
-        "dev": "rollup -c --environment BUILD:development -w",
-        "build": "rollup -c --environment BUILD:production",
-        "zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
-        "test": "npx gscan .",
-        "pretest": "npm run build"
-    },
-    "author": {
-        "name": "John Mantas",
-        "email": "mantasjohn67@gmail.com",
-        "url": "https://johnmantas.com"
-    },
-    "gpm": {
-        "type": "theme",
-        "categories": [
-            "Minimal",
-            "Help Center",
-            "Docs"
-        ]
-    },
-    "keywords": [
-        "ghost",
-        "theme",
-        "ghost-theme",
-        "help center",
-        "docs"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TryGhost/Starter.git"
-    },
-    "bugs": "https://github.com/TryGhost/Starter/issues",
-    "contributors": [
-        "https://github.com/TryGhost/Starter/graphs/contributors"
-    ],
-    "devDependencies": {
-        "@babel/core": "^7.23.9",
-        "@babel/preset-env": "^7.23.9",
-        "@rollup/plugin-babel": "^6.0.4",
-        "@rollup/plugin-commonjs": "^25.0.7",
-        "@rollup/plugin-node-resolve": "^15.2.3",
-        "@rollup/plugin-terser": "^0.4.4",
-        "autoprefixer": "^10.4.17",
-        "bestzip": "^2.2.1",
-        "postcss": "^8.4.24",
-        "postcss-import": "^16.0.1",
-        "postcss-preset-env": "^9.3.0",
-        "rollup": "^4.12.0",
-        "rollup-plugin-livereload": "^2.0.5",
-        "rollup-plugin-postcss": "^4.0.2"
-    },
-    "browserslist": [
-        "defaults"
-    ],
-    "config": {
-        "card_assets": true,
-        "posts_per_page": 15,
-        "image_sizes": {
-            "xxs": {
-                "width": 30
-            },
-            "xs": {
-                "width": 100
-            },
-            "s": {
-                "width": 300
-            },
-            "m": {
-                "width": 600
-            },
-            "l": {
-                "width": 1200
-            },
-            "xl": {
-                "width": 2000
-            }
-        }
-    },
-    "type": "module"
+	"name": "athena",
+	"description": "Help center theme for Ghost",
+	"demo": "https://starter.ghost.io",
+	"version": "1.0.0",
+	"engines": {
+		"ghost": ">=5.0.0"
+	},
+	"license": "MIT",
+	"screenshots": {
+		"desktop": "assets/screenshot-desktop.jpg"
+	},
+	"scripts": {
+		"dev": "rollup -c --environment BUILD:development -w",
+		"build": "rollup -c --environment BUILD:production",
+		"zip": "npm run build && bestzip $npm_package_name.zip assets/* partials/* members/* *.hbs package.json",
+		"test": "npx gscan .",
+		"pretest": "npm run build"
+	},
+	"author": {
+		"name": "John Mantas",
+		"email": "mantasjohn67@gmail.com",
+		"url": "https://johnmantas.com"
+	},
+	"gpm": {
+		"type": "theme",
+		"categories": [
+			"Minimal",
+			"Help Center",
+			"Docs"
+		]
+	},
+	"keywords": [
+		"ghost",
+		"theme",
+		"ghost-theme",
+		"help center",
+		"docs"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TryGhost/Starter.git"
+	},
+	"bugs": "https://github.com/TryGhost/Starter/issues",
+	"contributors": [
+		"https://github.com/TryGhost/Starter/graphs/contributors"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.23.9",
+		"@babel/preset-env": "^7.23.9",
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-commonjs": "^25.0.7",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-terser": "^0.4.4",
+		"autoprefixer": "^10.4.17",
+		"bestzip": "^2.2.1",
+		"postcss": "^8.4.24",
+		"postcss-import": "^16.0.1",
+		"postcss-preset-env": "^9.3.0",
+		"rollup": "^4.12.0",
+		"rollup-plugin-livereload": "^2.0.5",
+		"rollup-plugin-postcss": "^4.0.2"
+	},
+	"browserslist": [
+		"defaults"
+	],
+	"config": {
+		"card_assets": true,
+		"posts_per_page": 15,
+		"image_sizes": {
+			"xxs": {
+				"width": 30
+			},
+			"xs": {
+				"width": 100
+			},
+			"s": {
+				"width": 300
+			},
+			"m": {
+				"width": 600
+			},
+			"l": {
+				"width": 1200
+			},
+			"xl": {
+				"width": 2000
+			}
+		},
+		"custom": {
+			"hero_title": {
+				"type": "text",
+				"group": "homepage"
+			},
+			"hero_text": {
+				"type": "text",
+				"group": "homepage"
+			},
+			"hero_type": {
+				"type": "select",
+				"options": [
+					"Default",
+					"Featured posts"
+				],
+				"group": "homepage"
+			}
+		}
+	},
+	"type": "module"
 }

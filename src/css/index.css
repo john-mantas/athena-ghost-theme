@@ -11,6 +11,7 @@ production stylesheet in assets/index.css using: npm run dev
 
 /* Elements */
 @import "elements/buttons.css";
+@import "elements/inputs.css";
 
 /* Common components */
 @import "common/helpers.css";
@@ -18,3 +19,6 @@ production stylesheet in assets/index.css using: npm run dev
 @import "common/header.css";
 @import "common/navigation.css";
 @import "common/footer.css";
+
+/* Sections */
+@import "sections/hero.css";

@@ -5,8 +5,10 @@
 	/* Colours */
 	--color-primary: var(--ghost-accent-color, #3eb0ef);
 	--color-foreground: #131313;
+	--color-foreground-light: #3d3d3d;
 	--color-background: #f5f5f5;
 	--color-border: #ddd;
+	--color-input: #fff;
 	--color-success: #80b912;
 	--color-error: #f05230;
 
@@ -18,22 +20,36 @@
 	--font-mono: Menlo, Courier, monospace;
 
 	/* Spacings */
-	--space-gutter: 20px;
+	--spacing-01: 0.125rem;
+	--spacing-02: 0.25rem;
+	--spacing-03: 0.5rem;
+	--spacing-04: 0.75rem;
+	--spacing-05: 1rem;
+	--spacing-06: 1.5rem;
+	--spacing-07: 2rem;
+	--spacing-08: 2.5rem;
+	--spacing-09: 3rem;
+	--spacing-10: 4rem;
+	--spacing-11: 5rem;
+	--spacing-12: 6rem;
+	--spacing-13: 10rem;
+	--spacing-gutter: var(--spacing-06);
 
 	/* Sizes */
 	--size-header-logo: 50px;
+	--container-md: 1100px;
 }
 
 @media (min-width: 550px) {
 	:root {
 		/* Spacings */
-		--space-gutter: 30px;
+		--spacing-gutter: var(--spacing-07);
 	}
 }
 
 @media (min-width: 768px) {
 	:root {
 		/* Spacings */
-		--space-gutter: 40px;
+		--spacing-gutter: var(--spacing-08);
 	}
 }

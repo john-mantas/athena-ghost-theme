@@ -12,7 +12,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: var(--space-gutter);
+	gap: var(--spacing-gutter);
 }
 
 .header__content {
@@ -39,9 +39,9 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		width: calc(100vw - var(--space-gutter) * 2);
+		width: calc(100vw - var(--spacing-gutter) * 2);
 		display: grid;
-		padding: var(--space-gutter);
+		padding: var(--spacing-gutter);
 		background-color: var(--color-background);
 		opacity: 0;
 		pointer-events: none;

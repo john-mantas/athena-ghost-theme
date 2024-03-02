@@ -4,5 +4,7 @@
 	"Account": "Account",
 	"Page {page} of {pages}": "Page {page} of {pages}",
 	"Older Posts": "Older Posts",
-	"Newer Posts": "Newer Posts"
+	"Newer Posts": "Newer Posts",
+	"Search": "Search",
+	"Featured posts": "Featured posts"
 }
