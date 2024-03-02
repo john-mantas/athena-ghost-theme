@@ -1,0 +1,23 @@
+<section class="section featured-tags">
+	<div class="container">
+		<ul class="featured-tags__grid list-unstylled">
+			{{#if @custom.featured_tags}}
+				{{#get "tags" filter="slug:[{{@custom.featured_tags}}]"}}
+						{{#foreach tags}}
+							<li>
+								{{> "card-tag" show-accent-color="true" fallback-icon="book"}}
+							</li>
+						{{/foreach}}
+				{{/get}}
+			{{else}}
+				{{#get "tags" filter="visibility:public" limit="3" order="count.posts desc" include="count.posts"}}
+					{{#foreach tags}}
+							<li>
+								{{> "card-tag" show-accent-color="true" fallback-icon="book"}}
+							</li>
+						{{/foreach}}
+				{{/get}}
+			{{/if}}
+		</ul>
+	</div>
+</section>

@@ -88,6 +88,17 @@
 			}
 		},
 		"custom": {
+			"tags_card_image_style": {
+				"type": "select",
+				"options": [
+					"Small",
+					"Medium",
+					"Large",
+					"Full width",
+					"Hidden"
+				],
+				"default": "Small"
+			},
 			"hero_title": {
 				"type": "text",
 				"group": "homepage"
@@ -102,6 +113,12 @@
 					"Default",
 					"Featured posts"
 				],
+				"default": "Default",
+				"group": "homepage"
+			},
+			"featured_tags": {
+				"type": "text",
+				"description": "Enter the slug of one or more tags, separated by commas.",
 				"group": "homepage"
 			}
 		}
