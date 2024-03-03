@@ -9,7 +9,9 @@
 					<a href="{{url}}" class="card">
 						<div class="card__content">
 							<h3 class="card__title">{{title}}</h3>
-							<div class="card__description">{{excerpt}}</div>
+							{{#if excerpt}}
+								<div class="card__description">{{excerpt}}</div>
+							{{/if}}
 						</div>
 					</a>
 				{{/foreach}}

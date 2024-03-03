@@ -37,7 +37,8 @@
 
 	/* Sizes */
 	--size-header-logo: 50px;
-	--container-md: 1100px;
+	--size-container: 1400px;
+	--size-container-md: 1100px;
 
 	/* Cards */
 	--card-padding: var(--spacing-06);

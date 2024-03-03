@@ -69,7 +69,7 @@
 /* Featured posts */
 /* ------------------------------------------------------------------------- */
 .hero__featured {
-	max-width: var(--container-md);
+	max-width: var(--size-container-md);
 	margin: var(--hero-padding) auto 0;
 }
 
