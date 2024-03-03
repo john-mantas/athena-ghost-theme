@@ -5,3 +5,21 @@
 	padding-left: var(--spacing-gutter);
 	padding-right: var(--spacing-gutter);
 }
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--spacing-gutter);
+}
+
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid {
+		grid-template-columns: repeat(var(--columns, 3), 1fr);
+	}
+}

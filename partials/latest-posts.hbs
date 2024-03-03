@@ -1,0 +1,16 @@
+<section class="section section--bg latest-posts">
+	<div class="container">
+		<header class="section__header">
+			<h2 class="section__title">{{t "Latest posts"}}</h2>
+		</header>
+		<ul class="grid list-unstylled">
+			{{#get "posts" limit="6"}}
+				{{#foreach posts}}
+					<li>
+						{{> "card" show-media="fallback-icon"}}
+					</li>
+				{{/foreach}}
+			{{/get}}
+		</ul>
+	</div>
+</section>

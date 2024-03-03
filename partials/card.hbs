@@ -1,14 +1,32 @@
-{{!-- Re-usable card for linking to posts --}}
+{{!--
 
-<article class="{{post_class}}" style="width: 200px">
-	<a href="{{url}}">
-		{{#if feature_image}}
-			{{> "feature-image"}}
-		{{/if}}
-		<div>
-			<time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-			<h2>{{title}}</h2>
-			<p>{{excerpt}}</p>
+Re-usable card for linking to posts
+
+Properties:
+- show-media=("featured"|"fallback-icon"): Choose media content of the card
+
+--}}
+
+<article class="{{post_class}}">
+	<a href="{{url}}" class="card card--post">
+		{{#match show-media "==" "featured"}}
+			{{#if feature_image}}
+				<figure class="card__media">
+					{{> "feature-image"}}
+				</figure>
+			{{/if}}
+		{{/match}}
+		{{#match show-media "==" "fallback-icon"}}
+			<figure class="card__media">
+				{{> "icons/article"}}
+			</figure>
+		{{/match}}
+		<div class="card__content">
+			<time datetime="{{date format="YYYY-MM-DD"}}">
+				<small>{{date format="D MMM YYYY"}}</small>
+			</time>
+			<h2 class="card__title">{{title}}</h2>
+			<p class="card__description">{{excerpt}}</p>
 		</div>
 	</a>
 </article>

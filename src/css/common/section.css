@@ -2,6 +2,25 @@
 	padding: var(--spacing-12) 0;
 }
 
-.section + .section {
+.section + .section:not(.section--bg) {
 	padding-top: 0;
+}
+
+.section--bg {
+	background-color: #fff;
+}
+
+.section__header {
+	margin-bottom: var(--spacing-07);
+}
+
+.section__title {
+	margin-bottom: 0;
+	font-size: 22px;
+}
+
+@media (min-width: 768px) {
+	.section__title {
+		font-size: 28px;
+	}
 }
