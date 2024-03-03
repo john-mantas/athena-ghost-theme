@@ -118,7 +118,12 @@
 			},
 			"featured_tags": {
 				"type": "text",
-				"description": "Enter the slug of one or more tags, separated by commas.",
+				"description": "Enter the slugs of one or more tags, separated by commas",
+				"group": "homepage"
+			},
+			"quick_links": {
+				"type": "text",
+				"description": "Enter the slugs of one or more pages, separated by commas",
 				"group": "homepage"
 			}
 		}

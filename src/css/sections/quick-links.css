@@ -1,0 +1,17 @@
+.quick-links__grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--spacing-06);
+}
+
+@media (min-width: 768px) {
+	.quick-links__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1025px) {
+	.quick-links__grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

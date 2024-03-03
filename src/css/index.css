@@ -12,6 +12,7 @@ production stylesheet in assets/index.css using: npm run dev
 /* Elements */
 @import "elements/buttons.css";
 @import "elements/inputs.css";
+@import "elements/card.css";
 @import "elements/card-tag.css";
 
 /* Common components */
@@ -20,7 +21,9 @@ production stylesheet in assets/index.css using: npm run dev
 @import "common/header.css";
 @import "common/navigation.css";
 @import "common/footer.css";
+@import "common/section.css";
 
 /* Sections */
 @import "sections/hero.css";
 @import "sections/featured-tags.css";
+@import "sections/quick-links.css";
