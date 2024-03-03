@@ -10,9 +10,9 @@
 
 		<style>
 			:root {
-				{{#match @custom.tags_card_image_style "==" "Small"}}--tag-card-image-size: 44px;{{/match}}
-				{{#match @custom.tags_card_image_style "==" "Medium"}}--tag-card-image-size: 66px;{{/match}}
-				{{#match @custom.tags_card_image_style "==" "Large"}}--tag-card-image-size: 88px;{{/match}}
+				{{#match @custom.cards_image_style "==" "Small"}}--card-image-size: 44px;{{/match}}
+				{{#match @custom.cards_image_style "==" "Medium"}}--card-image-size: 66px;{{/match}}
+				{{#match @custom.cards_image_style "==" "Large"}}--card-image-size: 88px;{{/match}}
 			}
 		</style>
 
@@ -20,7 +20,7 @@
 		{{ghost_head}}
 	</head>
 
-	<body class="site {{body_class}}" data-tag-card-image="{{@custom.tags_card_image_style}}">
+	<body class="site {{body_class}}" data-card-image="{{@custom.cards_image_style}}">
 		{{> "header"}}
 
 		<main class="site__main">

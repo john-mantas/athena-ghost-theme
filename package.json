@@ -88,7 +88,7 @@
 			}
 		},
 		"custom": {
-			"tags_card_image_style": {
+			"cards_image_style": {
 				"type": "select",
 				"options": [
 					"Small",
