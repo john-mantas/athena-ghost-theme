@@ -4,8 +4,6 @@ Re-usable card for linking to tags
 
 Properties:
 - show-accent-color="true": Enables the background color of the card.
-- fallback-icon: The icon name to be used when the tag has no featured image,
-	valid values are only the filenames of the icons in partials/icons folder.
 
 --}}
 
@@ -30,7 +28,7 @@ Properties:
 		{{else}}
 			{{#match @custom.cards_image_style "!=" "Full width"}}
 				{{#if fallback-icon}}
-					{{> (concat "icons/" fallback-icon)}}
+					{{> "icons/book"}}
 				{{/if}}
 			{{/match}}
 		{{/if}}
