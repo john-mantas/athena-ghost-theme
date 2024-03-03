@@ -8,14 +8,6 @@
 		<link rel="stylesheet" href="{{asset "index.css"}}" />
 		<script src="{{asset "index.js"}}" defer></script>
 
-		<style>
-			:root {
-				{{#match @custom.cards_image_style "==" "Small"}}--card-image-size: 44px;{{/match}}
-				{{#match @custom.cards_image_style "==" "Medium"}}--card-image-size: 66px;{{/match}}
-				{{#match @custom.cards_image_style "==" "Large"}}--card-image-size: 88px;{{/match}}
-			}
-		</style>
-
 		{{!-- Outputs important meta data and settings, should always be in <head> --}}
 		{{ghost_head}}
 	</head>

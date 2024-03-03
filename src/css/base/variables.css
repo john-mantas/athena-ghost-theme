@@ -38,6 +38,10 @@
 	/* Sizes */
 	--size-header-logo: 50px;
 	--container-md: 1100px;
+
+	/* Cards */
+	--card-padding: var(--spacing-06);
+	--card-image-size: 44px;
 }
 
 @media (min-width: 550px) {

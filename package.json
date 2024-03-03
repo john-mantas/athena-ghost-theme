@@ -91,13 +91,11 @@
 			"cards_image_style": {
 				"type": "select",
 				"options": [
-					"Small",
-					"Medium",
-					"Large",
+					"Icon",
 					"Full width",
 					"Hidden"
 				],
-				"default": "Small"
+				"default": "Icon"
 			},
 			"hero_title": {
 				"type": "text",

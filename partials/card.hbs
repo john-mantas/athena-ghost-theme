@@ -2,21 +2,17 @@
 
 Re-usable card for linking to posts
 
-Properties:
-- show-media=("featured"|"fallback-icon"): Choose media content of the card
-
 --}}
 
 <article class="{{post_class}}">
 	<a href="{{url}}" class="card card--post">
-		{{#match show-media "==" "featured"}}
+		{{#match @custom.cards_image_style "==" "Full width"}}
 			{{#if feature_image}}
 				<figure class="card__media">
 					{{> "feature-image"}}
 				</figure>
 			{{/if}}
-		{{/match}}
-		{{#match show-media "==" "fallback-icon"}}
+		{{else}}
 			<figure class="card__media">
 				{{> "icons/article"}}
 			</figure>
