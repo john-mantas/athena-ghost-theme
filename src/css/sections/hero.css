@@ -47,6 +47,9 @@
 
 .hero__search {
 	display: inline-flex;
+	padding: var(--spacing-03);
+	background-color: var(--color-input);
+	border-radius: var(--border-radius-pill);
 }
 
 .hero__search-label {

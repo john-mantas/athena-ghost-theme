@@ -7,7 +7,7 @@
 	list-style: none;
 }
 
-.nav__item {
+.nav__item:not(.btn) {
 	display: flex;
 	padding: 6px;
 }

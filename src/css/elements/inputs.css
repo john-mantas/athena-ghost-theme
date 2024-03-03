@@ -2,8 +2,9 @@
 	display: block;
 	font-size: 1rem;
 	line-height: 1.5;
-	padding: 0.375rem 0.75rem;
+	padding: var(--spacing-03) var(--spacing-06);
 	border: 1px solid transparent;
+	border-radius: var(--border-radius-pill);
 	background-color: var(--color-input);
 	appearance: none;
 }

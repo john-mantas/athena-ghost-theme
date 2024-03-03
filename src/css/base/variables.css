@@ -43,6 +43,10 @@
 	/* Cards */
 	--card-padding: var(--spacing-06);
 	--card-image-size: 44px;
+
+	/* Border radius */
+	--border-radius: var(--spacing-05);
+	--border-radius-pill: calc(var(--border-radius) * Infinity);
 }
 
 @media (min-width: 550px) {
