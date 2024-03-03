@@ -97,6 +97,12 @@
 				],
 				"default": "Icon"
 			},
+			"email_signup_title": {
+				"type": "text"
+			},
+			"email_signup_description": {
+				"type": "text"
+			},
 			"hero_title": {
 				"type": "text",
 				"group": "homepage"

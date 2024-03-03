@@ -1,0 +1,25 @@
+{{#if @site.members_enabled}}
+	{{#unless @member}}
+		<section class="section subscribe">
+			<div class="container container--md text-center">
+				<header class="section__header">
+					<h2 class="section__title">
+						{{#if @custom.email_signup_title}}
+							{{{@custom.email_signup_title}}}
+						{{else}}
+							{{t "Subscribe to our newsletter"}}
+						{{/if}}
+					</h2>
+					<p class="section__description">
+						{{#if @custom.email_signup_description}}
+							{{{@custom.email_signup_description}}}
+						{{else}}
+							{{t "Discover the latest updates, insights, and news right in your inbox"}}
+						{{/if}}
+					</p>
+				</header>
+				<button type="button" class="btn btn--primary" data-portal="signup">{{t "Subscribe"}}</button>
+			</div>
+		</section>
+	{{/unless}}
+{{/if}}

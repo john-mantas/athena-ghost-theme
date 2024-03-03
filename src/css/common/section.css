@@ -2,7 +2,7 @@
 	padding: var(--spacing-12) 0;
 }
 
-.section + .section:not(.section--bg) {
+.section:not(.section--bg) + .section:not(.section--bg) {
 	padding-top: 0;
 }
 
@@ -17,6 +17,18 @@
 .section__title {
 	margin-bottom: 0;
 	font-size: 22px;
+}
+
+.section__description {
+	max-width: 600px;
+	width: 100%;
+	margin-top: var(--spacing-04);
+	margin-bottom: 0;
+}
+
+.text-center .section__description {
+	margin-inline-start: auto;
+	margin-inline-end: auto;
 }
 
 @media (min-width: 768px) {
