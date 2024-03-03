@@ -25,5 +25,4 @@ production stylesheet in assets/index.css using: npm run dev
 
 /* Sections */
 @import "sections/hero.css";
-@import "sections/featured-tags.css";
 @import "sections/quick-links.css";

@@ -1,5 +1,7 @@
 {{!--
 
+Re-usable card for linking to tags
+
 Properties:
 - show-accent-color="true": Enables the background color of the card.
 - fallback-icon: The icon name to be used when the tag has no featured image,
@@ -12,29 +14,27 @@ Properties:
 	class="card card--tag card--{{slug}}"
 	{{#if show-accent-color}}{{#if accent_color}} style="--bg-color: {{accent_color}}"{{/if}}{{/if}}
 >
-	{{#match @custom.cards_image_style "!=" "Hidden"}}
-		<figure class="card__media">
-			{{#if feature_image}}
-				<img
-					srcset="
-					{{img_url feature_image size="xxs"}} 30w,
-					{{img_url feature_image size="xs"}} 100w,
-					{{img_url feature_image size="s"}} 300w,
-					{{img_url feature_image size="m"}} 600w,
-					{{img_url feature_image size="l"}} 1200w"
-					sizes="(min-width: 1200px) 1200px, 90vw"
-					src="{{img_url feature_image size="l"}}"
-					alt="{{#if feature_image_alt}}{{feature_image_alt}}{{/if}}"
-				>
-			{{else}}
-				{{#match @custom.cards_image_style "!=" "Full width"}}
-					{{#if fallback-icon}}
-						{{> (concat "icons/" fallback-icon)}}
-					{{/if}}
-				{{/match}}
-			{{/if}}
-		</figure>
-	{{/match}}
+	<figure class="card__media">
+		{{#if feature_image}}
+			<img
+				srcset="
+				{{img_url feature_image size="xxs"}} 30w,
+				{{img_url feature_image size="xs"}} 100w,
+				{{img_url feature_image size="s"}} 300w,
+				{{img_url feature_image size="m"}} 600w,
+				{{img_url feature_image size="l"}} 1200w"
+				sizes="(min-width: 1200px) 1200px, 90vw"
+				src="{{img_url feature_image size="l"}}"
+				alt="{{#if feature_image_alt}}{{feature_image_alt}}{{/if}}"
+			>
+		{{else}}
+			{{#match @custom.cards_image_style "!=" "Full width"}}
+				{{#if fallback-icon}}
+					{{> (concat "icons/" fallback-icon)}}
+				{{/if}}
+			{{/match}}
+		{{/if}}
+	</figure>
 	<div class="card__content">
 		<h2 class="card__title">{{name}}</h2>
 		{{#if description}}

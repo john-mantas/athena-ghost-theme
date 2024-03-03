@@ -23,6 +23,10 @@
 	padding: var(--card-padding);
 }
 
+.card--post .card__media {
+	padding-bottom: 0;
+}
+
 .card__media img,
 .card__media picture {
 	display: inline-block;
@@ -34,6 +38,10 @@
 	width: var(--card-image-size);
 	height: var(--card-image-size);
 	color: var(--color-primary);
+}
+
+[data-card-image="Hidden"] .card__media {
+	display: none;
 }
 
 [data-card-image="Full width"] .card__media {

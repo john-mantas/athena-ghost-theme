@@ -1,15 +1,15 @@
 {{#get "pages" filter="slug:[{{@custom.quick_links}}]"}}
 	<section class="section quick-links">
 		<div class="container">
-			<header>
-				<h2>{{t "Quick links"}}</h2>
+			<header class="section__header">
+				<h2 class="section__title">{{t "Quick links"}}</h2>
 			</header>
-			<nav class="quick-links__grid">
+			<nav class="grid grid--quick-links">
 				{{#foreach pages}}
 					<a href="{{url}}" class="card">
 						<div class="card__content">
 							<h3 class="card__title">{{title}}</h3>
-							<div class="card__description">{{excerpt words="10"}}</div>
+							<div class="card__description">{{excerpt}}</div>
 						</div>
 					</a>
 				{{/foreach}}
