@@ -27,3 +27,8 @@
 		grid-template-columns: repeat(var(--columns, 3), 1fr);
 	}
 }
+
+.grid--loop {
+	--grid-gap: var(--spacing-05);
+	--columns: 2;
+}

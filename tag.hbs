@@ -1,13 +1,22 @@
 {{!< default}}
 
-{{#tag}}
-	<section>
-		<header>
-				<h1>{{name}}</h1>
+<section class="page-tag page-tag--{{slug}}">
+	<div class="container">
+		{{#tag}}
+			<header class="section text-center">
+				<small>{{plural ../pagination.total empty=(t "0 posts") singular=(t "% post") plural=(t "% posts")}}</small>
+				<h1 class="section__title">
+					{{name}}
+				</h1>
 				{{#if description}}
-					<p>{{description}}</p>
+					<p class="section__description">{{description}}</p>
 				{{/if}}
-		</header>
-		{{> "feature-image"}}
-	</section>
-{{/tag}}
+			</header>
+		{{/tag}}
+		<div class="section grid grid--loop">
+			{{#foreach posts limit="all"}}
+				{{> "card"}}
+			{{/foreach}}
+		</div>
+	</div>
+</section>
