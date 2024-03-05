@@ -14,14 +14,25 @@ Re-usable card for linking to posts
 			{{/if}}
 		{{else}}
 			<figure class="card__media">
-				{{> "icons/article"}}
+				{{#if featured}}
+					{{> "icons/star"}}
+				{{else}}
+					{{> "icons/article"}}
+				{{/if}}
 			</figure>
 		{{/match}}
 		<div class="card__content">
 			{{!-- <time datetime="{{date format="YYYY-MM-DD"}}">
 				<small>{{date format="D MMM YYYY"}}</small>
 			</time> --}}
-			<h3 class="card__title">{{title}}</h3>
+			<h3 class="card__title">
+				{{#match @custom.cards_image_style "!=" "Icon"}}
+					{{#if featured}}
+						{{> "icons/star"}}
+					{{/if}}
+				{{/match}}
+				{{title}}
+			</h3>
 			<p class="card__description">{{excerpt}}</p>
 		</div>
 	</a>
