@@ -2,10 +2,15 @@
 
 Re-usable card for linking to posts
 
+Params:
+- border=true: Adds a border around the card
+- horizontal=true: Converts the card to horizontal layout
+- list=true: Converts the card to fit in a list
+
 --}}
 
 <article class="{{post_class}}">
-	<a href="{{url}}" class="card card--border card--horizontal">
+	<a href="{{url}}" class="card{{#if border}} card--border{{/if}}{{#if horizontal}} card--horizontal{{/if}}{{#if list}} card--list{{/if}}">
 		{{#match @custom.cards_image_style "==" "Full width"}}
 			{{#if feature_image}}
 				<figure class="card__media">

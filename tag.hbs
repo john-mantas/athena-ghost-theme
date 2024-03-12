@@ -1,22 +1,35 @@
 {{!< default}}
 
 <section class="page-tag page-tag--{{slug}}">
-	<div class="container">
-		{{#tag}}
-			<header class="section text-center">
-				<small>{{plural ../pagination.total empty=(t "0 posts") singular=(t "% post") plural=(t "% posts")}}</small>
-				<h1 class="section__title">
-					{{name}}
-				</h1>
-				{{#if description}}
-					<p class="section__description">{{description}}</p>
-				{{/if}}
-			</header>
-		{{/tag}}
-		<div class="section grid grid--loop">
-			{{#foreach posts limit="all"}}
-				{{> "card"}}
-			{{/foreach}}
-		</div>
-	</div>
+	{{#tag}}
+		<header class="section container text-center">
+			<small>{{plural ../pagination.total empty=(t "0 posts") singular=(t "% post") plural=(t "% posts")}}</small>
+			<h1 class="section__title">
+				{{name}}
+			</h1>
+			{{#if description}}
+				<p class="section__description">{{description}}</p>
+			{{/if}}
+		</header>
+		{{#get "posts" filter="tag:{{slug}}+featured:true" limit="all"}}
+			{{#match posts.length ">" "0"}}
+				<div class="section">
+					<div class="container grid grid--loop">
+						{{#foreach posts}}
+							{{> "card" horizontal=true border=true}}
+						{{/foreach}}
+					</div>
+				</div>
+			{{/match}}
+		{{/get}}
+		{{#get "posts" filter="tag:{{slug}}+featured:false" limit="all"}}
+			{{#match posts.length ">" "0"}}
+				<div class="section container container--reader">
+					{{#foreach posts}}
+						{{> "card" list=true horizontal=true}}
+					{{/foreach}}
+				</div>
+			{{/match}}
+		{{/get}}
+	{{/tag}}
 </section>

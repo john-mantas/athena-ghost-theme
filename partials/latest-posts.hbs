@@ -7,7 +7,7 @@
 			{{#get "posts" limit="6"}}
 				{{#foreach posts}}
 					<li>
-						{{> "card"}}
+						{{> "card" horizontal=true border=true}}
 					</li>
 				{{/foreach}}
 			{{/get}}

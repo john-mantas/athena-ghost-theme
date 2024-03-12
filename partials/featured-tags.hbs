@@ -5,7 +5,7 @@
 				{{#get "tags" filter="slug:[{{@custom.featured_tags}}]"}}
 						{{#foreach tags}}
 							<li>
-								{{> "card-tag" show-accent-color="true"}}
+								{{> "card-tag" show-accent-color=true}}
 							</li>
 						{{/foreach}}
 				{{/get}}
@@ -13,7 +13,7 @@
 				{{#get "tags" filter="visibility:public" limit="3" order="count.posts desc" include="count.posts"}}
 					{{#foreach tags}}
 							<li>
-								{{> "card-tag" show-accent-color="true"}}
+								{{> "card-tag" show-accent-color=true}}
 							</li>
 						{{/foreach}}
 				{{/get}}
