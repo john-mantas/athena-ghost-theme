@@ -1,13 +1,11 @@
 .post-page {
-	padding: var(--spacing-10) 0;
+	margin: var(--spacing-10) 0;
 }
 
+.post__header,
+.post__details,
 .post__content,
-.post__comments {
-	padding-top: var(--spacing-10);
-}
-
-.post__details {
+.post__prev-next {
 	margin-bottom: var(--spacing-10);
 }
 
@@ -28,7 +26,6 @@
 	display: flex;
 	justify-content: space-between;
 	gap: var(--spacing-gutter);
-	padding-bottom: var(--spacing-10);
 }
 
 .post__prev-next .prev,
