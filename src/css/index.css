@@ -26,3 +26,6 @@ production stylesheet in assets/index.css using: npm run dev
 /* Sections */
 @import "sections/hero.css";
 @import "sections/quick-links.css";
+
+/* Pages */
+@import "pages/post.css";
