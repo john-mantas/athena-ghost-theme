@@ -88,6 +88,16 @@
 			}
 		},
 		"custom": {
+			"font_style": {
+				"type": "select",
+				"options": [
+					"Sans serif",
+					"Sans serif (System)",
+					"Serif",
+					"Serif (System)"
+				],
+				"default": "Sans serif"
+			},
 			"cards_image_style": {
 				"type": "select",
 				"options": [

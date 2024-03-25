@@ -1,0 +1,21 @@
+{{#match @custom.font_style "=" "Sans serif"}}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<style>:root {--font-family: "Montserrat", sans-serif;}</style>
+{{/match}}
+
+{{#match @custom.font_style "=" "Sans serif (System)"}}
+	<style>:root {--font-family: sans-serif;}</style>
+{{/match}}
+
+{{#match @custom.font_style "=" "Serif"}}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+	<style>:root {--font-family: "Lora", serif;}</style>
+{{/match}}
+
+{{#match @custom.font_style "=" "Serif (System)"}}
+	<style>:root {--font-family: serif;}</style>
+{{/match}}

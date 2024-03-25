@@ -9,6 +9,7 @@ html {
 }
 
 body {
+	font-family: var(--font-family);
 	text-rendering: optimizeSpeed;
 	color: var(--color-foreground);
 	background-color: var(--color-background);
@@ -19,7 +20,7 @@ pre,
 code,
 kbd,
 samp {
-	font-family: var(--font-mono), monospace;
+	font-family: Menlo, Courier, monospace;
 	max-width: 100%;
 }
 

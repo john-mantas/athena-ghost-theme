@@ -12,13 +12,6 @@
 	--color-success: #80b912;
 	--color-error: #f05230;
 
-	/* Fonts */
-	--font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-		sans-serif;
-	--font-serif: Georgia, Times, serif;
-	--font-mono: Menlo, Courier, monospace;
-
 	/* Spacings */
 	--spacing-01: 0.125rem;
 	--spacing-02: 0.25rem;
