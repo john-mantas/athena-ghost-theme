@@ -17,7 +17,6 @@
 
 .section__title {
 	margin-bottom: 0;
-	font-size: 22px;
 }
 
 .section__description {
@@ -30,10 +29,4 @@
 .text-center .section__description {
 	margin-inline-start: auto;
 	margin-inline-end: auto;
-}
-
-@media (min-width: 768px) {
-	.section__title {
-		font-size: 28px;
-	}
 }

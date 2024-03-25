@@ -2,13 +2,13 @@
 	<section class="section quick-links">
 		<div class="container">
 			<header class="section__header">
-				<h2 class="section__title">{{t "Quick links"}}</h2>
+				<h2 class="section__title fs-lg">{{t "Quick links"}}</h2>
 			</header>
 			<nav class="grid grid--quick-links">
 				{{#foreach pages}}
 					<a href="{{url}}" class="card">
 						<div class="card__content">
-							<h3 class="card__title">{{title}}</h3>
+							<h3 class="card__title fs-base">{{title}}</h3>
 							{{#if excerpt}}
 								<div class="card__description">{{excerpt}}</div>
 							{{/if}}

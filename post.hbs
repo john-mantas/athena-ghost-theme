@@ -10,7 +10,7 @@
 				{{#if custom_excerpt}}
 					<p class="post__excerpt">{{custom_excerpt}}</p>
 				{{/if}}
-				<div class="post__date">
+				<div class="post__date fs-sm">
 					<time datetime="{{date format="YYYY-MM-DD"}}">{{t "Last updated on"}} {{date}}</time>
 				</div>
 			</div>
@@ -37,8 +37,8 @@
 </article>
 
 <aside class="post__prev-next container container--reader">
-	{{#next_post}}<a href="{{url}}" class="prev"><small>{{> "icons/arrow-left"}} {{t "Previous"}}</small> <h2>{{title}}</h2></a>{{/next_post}}
-	{{#prev_post}}<a href="{{url}}" class="next"><small>{{t "Previous"}} {{> "icons/arrow-right"}}</small> <h2>{{title}}</h2></a>{{/prev_post}}
+	{{#next_post}}<a href="{{url}}" class="prev"><small>{{> "icons/arrow-left"}} {{t "Previous"}}</small> <h2 class="fs-base">{{title}}</h2></a>{{/next_post}}
+	{{#prev_post}}<a href="{{url}}" class="next"><small>{{t "Previous"}} {{> "icons/arrow-right"}}</small> <h2 class="fs-base">{{title}}</h2></a>{{/prev_post}}
 </aside>
 
 {{/post}}

@@ -36,8 +36,6 @@
 }
 
 .hero__title {
-	font-size: clamp(2rem, calc(2rem + 1.5vw), 3.5rem);
-	letter-spacing: -0.025em;
 	margin-bottom: var(--spacing-04);
 }
 
