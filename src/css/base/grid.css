@@ -17,7 +17,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: var(--grid-gap, var(--spacing-gutter));
+	gap: var(--grid-gap, var(--spacing-06));
 }
 
 @media (min-width: 768px) {
