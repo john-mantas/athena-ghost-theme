@@ -7,7 +7,7 @@
 }
 
 .card:not(.card--list) {
-	background-color: var(--bg-color, #fff);
+	background-color: var(--bg-color, var(--color-white));
 	border-radius: var(--border-radius);
 }
 

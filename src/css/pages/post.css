@@ -15,7 +15,7 @@
 
 .post__date {
 	margin-top: var(--spacing-06);
-	color: var(--color-foreground-light);
+	color: var(--color-text-lighter);
 }
 
 .post__image figcaption {

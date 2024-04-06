@@ -112,7 +112,7 @@
 
 .hero__featured-tag a {
 	font-size: 14px;
-	color: var(--color-foreground-light);
+	color: var(--color-text-light);
 	transition: 0.15s ease-out;
 }
 

@@ -65,7 +65,7 @@
 									<li>
 										{{#if primary_tag}}
 											<div class="hero__featured-tag">
-												<a href="{{primary_tag.url}}" style="--color:{{primary_tag.accent_color}}">
+												<a href="{{primary_tag.url}}"{{#if primary_tag.accent_color}} style="--color:{{primary_tag.accent_color}}"{{/if}}>
 													{{primary_tag.name}}
 												</a>
 											</div>
@@ -74,7 +74,7 @@
 									</li>
 								{{/foreach}}
 							</ul>
-						</sectio>
+						</section>
 					{{/match}}
 				{{/get}}
 			{{/match}}

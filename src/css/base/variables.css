@@ -2,15 +2,29 @@
 /* ---------------------------------------------------------- */
 
 :root {
-	/* Colours */
-	--color-primary: var(--ghost-accent-color, #3eb0ef);
-	--color-foreground: #131313;
-	--color-foreground-light: #444444;
-	--color-background: #f5f5f5;
-	--color-border: #ddd;
-	--color-input: #fff;
-	--color-success: #80b912;
-	--color-error: #f05230;
+	/* Colors */
+	--color-white: #fff;
+	--color-gray-0: #f8f9fa;
+	--color-gray-1: #f1f3f5;
+	--color-gray-2: #e9ecef;
+	--color-gray-3: #dee2e6;
+	--color-gray-4: #ced4da;
+	--color-gray-5: #adb5bd;
+	--color-gray-6: #868e96;
+	--color-gray-7: #495057;
+	--color-gray-8: #343a40;
+	--color-gray-9: #212529;
+	--colo-black: #000;
+
+	--color-primary: var(--ghost-accent-color);
+	--color-text: var(--color-gray-9);
+	--color-text-light: var(--color-gray-8);
+	--color-text-lighter: var(--color-gray-7);
+	--color-bg: var(--color-gray-0);
+	--color-border: var(--color-gray-3);
+	--color-input: var(--color-white);
+	--color-success: #2f9e44;
+	--color-error: #f03e3e;
 
 	/* Spacings */
 	--spacing-01: 0.125rem;
