@@ -18,11 +18,9 @@
 			</nav>
 			<div class="header__actions nav">
 				{{#unless @member}}
+					<a href="#/portal/signin" class="nav__item" data-portal="signin">{{t "Sign in"}}</a>
 					{{#unless @site.members_invite_only}}
-						<a href="#/portal/signin" class="nav__item" data-portal="signin">{{t "Sign in"}}</a>
 						<a href="#/portal/signup" class="btn btn--primary nav__item" data-portal="signup">{{t "Subscribe"}}</a>
-					{{else}}
-						<a href="#/portal/signin" class="nav__item" data-portal="signin">{{t "Sign in"}}</a>
 					{{/unless}}
 				{{else}}
 					<a href="#/portal/account" class="nav__item" data-portal="account">{{t "Account"}}</a>

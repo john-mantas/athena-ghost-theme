@@ -9,7 +9,7 @@
 
 .nav__item:not(.btn) {
 	display: flex;
-	padding: 6px;
+	padding: var(--spacing-03);
 }
 
 .nav__item + .nav__item {
