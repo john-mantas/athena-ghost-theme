@@ -1,8 +1,8 @@
-# Ghost Starter Theme
+# Athena - Help Center Ghost Theme
 
-A starter framework for Ghost themes! Click **Use this template** to create a copy of this repo for everything you need to get started developing a custom Ghost theme.
+A help center inspired Ghost theme, this is not a production ready theme, but it is a good starting point or to be used as a reference theme.
 
-&nbsp;
+It started as a demo project to better understand ghost theme parts and development, it uses the Ghost [Starter](https://github.com/TryGhost/Starter) theme.
 
 ## First time using a Ghost theme?
 
@@ -14,8 +14,6 @@ We've documented this starter theme pretty heavily so that it should be possible
 - [Tutorials](https://ghost.org/tutorials/) offer a step-by-step guide to building the most common features in Ghost themes
 - The [Ghost VS Code extension](https://marketplace.visualstudio.com/items?itemName=TryGhost.ghost) speeds up theme development and provides quick access to helpful info
 - All of Ghost's official themes are [open source](https://github.com/tryghost) and are a great reference for learning how to create a theme
-
-&nbsp;
 
 ## Starter theme features
 
@@ -33,9 +31,7 @@ We've documented this starter theme pretty heavily so that it should be possible
 
 🚢&nbsp;Ghost's [GH Deploy Action](.github/workflows/deploy-theme.yml) included by default. [Learn more how to deploy your theme automatically](https://github.com/TryGhost/action-deploy-theme)
 
-➕&nbsp;Extensible by design. Rollup's configuration structure makes it easy to add [any number of plugins easily](https://github.com/rollup/plugins). 
-
-&nbsp;
+➕&nbsp;Extensible by design. Rollup's configuration structure makes it easy to add [any number of plugins easily](https://github.com/rollup/plugins).
 
 ## Theme structure
 
@@ -47,6 +43,7 @@ The main files are:
 - [`page.hbs`](page.hbs) - Used for individual pages
 - [`tag.hbs`](tag.hbs) - Used for tag archives
 - [`author.hbs`](author.hbs) - Used for author archives
+- [`error.hbs`](error.hbs) - Used for all 4xx and 5xx errors
 
 One neat trick is that you can also create custom one-off templates just by adding the slug of a page to a template file. For example:
 
@@ -54,17 +51,13 @@ One neat trick is that you can also create custom one-off templates just by addi
 - `tag-news.hbs` - Custom template for `/tag/news/` archive
 - `author-jamie.hbs` - Custom template for `/author/jamie/` archive
 
-&nbsp;
-
 ## Development guide
 
-The Starter theme provides a first-class development experience out of the box. 
-
-&nbsp;
+The Starter theme provides a first-class development experience out of the box.
 
 ### Setup
 
-To see realtime changes during development, symlink the Starter theme folder to the `content/themes` folder in your local Ghost install. 
+To see realtime changes during development, symlink the Starter theme folder to the `content/themes` folder in your local Ghost install.
 
 ```bash
 ln -s /path/to/starter /ghost/content/themes/starter
@@ -80,8 +73,6 @@ npm install
 
 If Node isn't installed, follow the [official Node installation guide](https://nodejs.org/).
 
-&nbsp;
-
 ### Start development mode
 
 From the Starter theme folder, start development mode:
@@ -93,8 +84,6 @@ npm run dev
 Changes you make to your styles, scripts, and Handlebars files will show up automatically in the browser. CSS and Javascript will be compiled and output to the `built` folder.
 
 Press `ctrl + c` in the terminal to exit development mode.
-
-&nbsp;
 
 ### Build, zip, and test your theme
 
@@ -116,10 +105,6 @@ Use `gscan` to test your theme for compatibility with Ghost:
 npm run test
 ```
 
-&nbsp;
+## License
 
-
-
-## Copyright & License
-
-Copyright (c) 2013-2023 Ghost Foundation - Released under the [MIT license](LICENSE).
+Released under the [MIT license](LICENSE.md).
